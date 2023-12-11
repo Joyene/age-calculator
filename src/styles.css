@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light-red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--Off-white);
+}
+
+.arrow {
+  background-color: var(--Purple);
+}
+
+.arrow:hover {
+  background-color: var(--Off-black);
+}
+
+/*.lines {
+    border-bottom: 5px solid purple;
+}*/
+
+.main-container {
+  margin: 30px auto;
+  /*text-align: center;*/
+  max-width: 500px;
+  background-color: var(--White);
+  border-bottom-right-radius: 100px;
+}
+
+.age-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+.age-container div {
+  margin: 15px;
+}
+
+.day {
+  font-size: 12px;
+  color: var(--Smokey-grey);
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+}
+
+input {
+  width: 80px;
+  height: 32px;
+  border: 2px solid var(--Smokey-grey);
+  font-size: 25px;
+  color: var(--Off-black);
+}
+
+::placeholder {
+  color: var(--Smokey-grey);
+  font-size: 20px;
+  text-align: center;
+}
+
+input:hover {
+  cursor: pointer;
+  border: 2px solid var(--Purple);
+}
+
+hr {
+  width: 350px;
+  color: var(--Smokey-grey);
+}
+
+.img-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.results {
+  display: flex;
+  color: var(--Purple);
+  font-style: italic;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  /*font-size: 55px;*/
+}
+.results div {
+  margin: 15px;
+}
+.years {
+  font-size: 45px;
+  color: var(--Off-black);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+.sub-line {
+  font-size: 50px;
+}
+
+.lines {
+  margin: 40px;
+}
+@media screen and (max-width: 375px) {
+  .img-arrow {
+    display: block;
+    justify-content: center;
+  }
+  .img-arrow img {
+    text-align: center;
+  }
+}
